@@ -6,10 +6,37 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	<link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=jacinto.design">
 	<link rel="stylesheet" href="style.css">
-	<title>Template</title>
+	<title>Quote Generator</title>
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+	<div class="quote-container" id="quote-container">
+		<!-- Quote -->
+		<div class="quote-text">
+			<!-- <i class="fas fa-quote-left"></i> -->
+					<span id="quote">"We are not who we think we are.
+		We are not who they think we are.
+		We are who we think they think we are.”       </span>
+		</div> 
+		<!-- Author -->
+		<div class="quote-author">
+			<span id="author"> Michael A. Greco</span>
+		</div>
+		<!-- Buttons -->
+		<div class="button-container">
+			<button class="twitter-button" id="twitter" title="Tweet This!">
+				<i class="fab fa-twitter"></i>
+			</button>
+			<!-- Place this tag where you want the button to render. -->
+            <button class="github-button" id="github" title="open-github">
+				<i class="fab fa-github"></i>
+			</button>
+			<button id ="new-quote">New Quote</button>
+		</div>
+	</div>
+	<!-- Loader -->
+	<div class="loader" id="loader"></div>
 	<!-- Script -->
 	<script src="script.js"></script>
 </body>
